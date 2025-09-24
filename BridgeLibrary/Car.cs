@@ -8,6 +8,11 @@
         public string LicensePlate { get; }
         public DateTime Date { get; }
 
+        /// <summary>
+        /// En contructor der sætter LicensePlate og Date
+        /// </summary>
+        /// <param name="licensePlate"></param>
+        /// <param name="date"></param>
         public Car(string licensePlate, DateTime date)
         {
             LicensePlate = licensePlate;
