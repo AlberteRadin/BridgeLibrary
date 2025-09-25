@@ -1,38 +1,32 @@
 ﻿namespace BridgeLibrary
 { 
-    public class Car
+    public class Car : Vehicle
     {
         /// <summary>
-        /// En Car klasse, med 2 properties: LicensePlate og Date
-        /// </summary>
-        public string LicensePlate { get; }
-        public DateTime Date { get; }
-
-        /// <summary>
-        /// En contructor der sætter LicensePlate og Date
+        /// Kalder på Vehicle contructor
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="date"></param>
         public Car(string licensePlate, DateTime date)
+            : base(licensePlate, date)
         {
-            LicensePlate = licensePlate;
-            Date = date;
         }
 
+
         /// <summary>
-        /// En metode der returnerer prisen for en bil der bruger broen
+        /// overrider Price metoden fra Vehicle klassen
         /// </summary>
         /// <returns>Den returnere 250 Kr</returns>
-        public double Price()
+        public override double Price()
         {
             return 250;
         }
-        
+
         /// <summary>
-        /// En metode der returnere typen af køretøj som Car
+        /// overrider VehicleType metoden fra Vehicle klassen
         /// </summary>
         /// <returns>Returnere en string Car</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";  
         }
