@@ -13,6 +13,9 @@ namespace BridgeLibrary
 
         public Vehicle(string licensePlate, DateTime date)
         {
+            if (licensePlate.Length > 7)
+                throw new ArgumentException("License plate cannot be longer than 7 characters.", nameof(licensePlate));
+
             LicensePlate = licensePlate;
             Date = date;
         }

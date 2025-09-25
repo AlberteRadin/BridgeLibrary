@@ -30,5 +30,21 @@ namespace BridgeLibrary.Tests
 
             Assert.AreEqual("MC", VehicleType);
         }
+
+        [TestMethod()]
+        public void licensePlateTooLongMC()
+        {
+            Assert.ThrowsException<ArgumentException>(() =>
+            {
+                var mc = new MC("fg356987", DateTime.Now); // 8 characters
+            });
+        }
+
+        [TestMethod()]
+        public void licensePlateCorrectLengthMC()
+        {
+            var mc = new MC("ABC1234", DateTime.Now); // 7 characters
+            Assert.AreEqual("ABC1234", mc.LicensePlate);
+        }
     }
 }
