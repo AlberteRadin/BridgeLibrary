@@ -14,8 +14,9 @@ namespace BridgeLibrary
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="date"></param>
-        public MC(string licensePlate, DateTime date)
-            : base(licensePlate, date)
+        /// <param name="brobizz"></param>
+        public MC(string licensePlate, DateTime date, bool brobizz)
+            : base(licensePlate, date, brobizz)
         {
         }
 
@@ -26,7 +27,10 @@ namespace BridgeLibrary
         /// <returns>Den returnere 120Kr</returns>
         public override double Price()
         {
-            return 120;
+            double basePrice = 120;
+            if (Brobizz)
+                return basePrice * 0.9;
+            return basePrice;
         }
 
         /// <summary>

@@ -11,13 +11,16 @@ namespace BridgeLibrary
         public string LicensePlate { get; }
         public DateTime Date { get; }
 
-        public Vehicle(string licensePlate, DateTime date)
+        public bool Brobizz { get; }
+
+        public Vehicle(string licensePlate, DateTime date, bool brobizz)
         {
             if (licensePlate.Length > 7)
                 throw new ArgumentException("License plate cannot be longer than 7 characters.", nameof(licensePlate));
 
             LicensePlate = licensePlate;
             Date = date;
+            Brobizz = brobizz;
         }
 
         /// <summary>

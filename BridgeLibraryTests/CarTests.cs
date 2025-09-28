@@ -15,7 +15,7 @@ namespace BridgeLibrary.Tests
         [TestMethod()]
         public void PriceTest()
         {
-            var car = new Car("FB30360", DateTime.Now);
+            var car = new Car("FB30360", DateTime.Now, false);
 
             double Price = car.Price();
 
@@ -24,7 +24,7 @@ namespace BridgeLibrary.Tests
        [TestMethod()]
         public void VehicleTypeTest()
         {
-            var car = new Car("FB30360", DateTime.Now);
+            var car = new Car("FB30360", DateTime.Now, false);
 
             string VehicleType = car.VehicleType();
 
@@ -36,17 +36,32 @@ namespace BridgeLibrary.Tests
         {
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                var car = new Car("fg356987", DateTime.Now); // 8 characters
+                var car = new Car("fg356987", DateTime.Now, true); // 8 characters
             });
         }
 
         [TestMethod()]
         public void licensePlateCorrectLengthCar()
         {
-            var car = new Car("ABC1234", DateTime.Now); // 7 characters
+            var car = new Car("ABC1234", DateTime.Now, true); // 7 characters
             Assert.AreEqual("ABC1234", car.LicensePlate);
         }
 
+        [TestMethod()]
+        public void Price_WithBrobizz_Gives10PercentDiscount()
+        {
+            var car = new Car("FB30360", DateTime.Now, true);
+            double price = car.Price();
+            Assert.AreEqual(225, price); // 250 * 0.9 = 225
+        }
+
+        [TestMethod()]
+        public void Price_WithoutBrobizz_NoDiscount()
+        {
+            var car = new Car("FB30360", DateTime.Now, false);
+            double price = car.Price();
+            Assert.AreEqual(250, price);
+        }
     }
     
 }

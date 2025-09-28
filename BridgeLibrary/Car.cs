@@ -7,8 +7,9 @@
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="date"></param>
-        public Car(string licensePlate, DateTime date)
-            : base(licensePlate, date)
+        /// <param name="brobizz"></param>
+        public Car(string licensePlate, DateTime date, bool brobizz)
+            : base(licensePlate, date, brobizz)
         {
         }
 
@@ -19,7 +20,10 @@
         /// <returns>Den returnere 250 Kr</returns>
         public override double Price()
         {
-            return 250;
+            double basePrice = 250;
+            if (Brobizz)
+                return basePrice * 0.9;
+            return basePrice;
         }
 
         /// <summary>
