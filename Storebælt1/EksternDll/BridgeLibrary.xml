@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BridgeLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:BridgeLibrary.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Kalder på Vehicle contructor
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
+            <param name="brobizz"></param>
+        </member>
+        <member name="M:BridgeLibrary.Car.Price">
+            <summary>
+            overrider Price metoden fra Vehicle klassen
+            </summary>
+            <returns>Den returnere 250 Kr</returns>
+        </member>
+        <member name="M:BridgeLibrary.Car.VehicleType">
+            <summary>
+            overrider VehicleType metoden fra Vehicle klassen
+            </summary>
+            <returns>Returnere en string Car</returns>
+        </member>
+        <member name="M:BridgeLibrary.MC.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Kalder på Vehicle contructor
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
+            <param name="brobizz"></param>
+        </member>
+        <member name="M:BridgeLibrary.MC.Price">
+            <summary>
+            Overrider Price metoden fra Vehicle klassen
+            </summary>
+            <returns>Den returnere 120Kr</returns>
+        </member>
+        <member name="M:BridgeLibrary.MC.VehicleType">
+            <summary>
+            overrider VehicleType metoden fra Vehicle klassen
+            </summary>
+            <returns>Returnere en string MC</returns>
+        </member>
+        <member name="M:BridgeLibrary.Vehicle.Price">
+            <summary>
+            En metode der returnerer prisen for en bil der bruger broen
+            </summary>
+            <returns>Den returnere 250 Kr</returns>
+        </member>
+        <member name="M:BridgeLibrary.Vehicle.VehicleType">
+            <summary>
+            En metode der returnere typen af køretøj som Car
+            </summary>
+            <returns>Returnere en string Car</returns>
+        </member>
+    </members>
+</doc>

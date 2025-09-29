@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeLibrary", "BridgeLibrary\BridgeLibrary.csproj", "{2EFB73B4-BCAE-4C1E-B727-164DA52BDCEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeLibraryTests", "BridgeLibraryTests\BridgeLibraryTests.csproj", "{C1B6BDA2-3FC2-49D3-A66B-809723C551CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorebæltTicketLibrary", "Storebælt1\StorebæltTicketLibrary.csproj", "{8B93C885-4626-4E05-9302-20F257DD9B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorebæltTicketLibraryTests", "StorebæltTicketLibraryTests\StorebæltTicketLibraryTests.csproj", "{31BB3C70-A9B6-4327-B453-20AD18ACCA01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C1B6BDA2-3FC2-49D3-A66B-809723C551CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B6BDA2-3FC2-49D3-A66B-809723C551CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B6BDA2-3FC2-49D3-A66B-809723C551CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B93C885-4626-4E05-9302-20F257DD9B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B93C885-4626-4E05-9302-20F257DD9B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B93C885-4626-4E05-9302-20F257DD9B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B93C885-4626-4E05-9302-20F257DD9B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BB3C70-A9B6-4327-B453-20AD18ACCA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BB3C70-A9B6-4327-B453-20AD18ACCA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BB3C70-A9B6-4327-B453-20AD18ACCA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BB3C70-A9B6-4327-B453-20AD18ACCA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
