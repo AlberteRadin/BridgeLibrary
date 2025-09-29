@@ -10,7 +10,7 @@ namespace StorebæltTicketLibrary
 
         public override double Price()
         {
-            double basePrice = 250;
+            double basePrice = 230;
 
             // Apply weekend discount
             if (Date.DayOfWeek == DayOfWeek.Saturday || Date.DayOfWeek == DayOfWeek.Sunday)

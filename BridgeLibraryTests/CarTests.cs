@@ -19,7 +19,7 @@ namespace BridgeLibrary.Tests
 
             double Price = car.Price();
 
-            Assert.AreEqual(250, Price);
+            Assert.AreEqual(230, Price);
         }
        [TestMethod()]
         public void VehicleTypeTest()
@@ -52,7 +52,7 @@ namespace BridgeLibrary.Tests
         {
             var car = new Car("FB30360", DateTime.Now, true);
             double price = car.Price();
-            Assert.AreEqual(225, price); // 250 * 0.9 = 225
+            Assert.AreEqual(207, price); // 230 * 0.9 = 207
         }
 
         [TestMethod()]
@@ -60,7 +60,7 @@ namespace BridgeLibrary.Tests
         {
             var car = new Car("FB30360", DateTime.Now, false);
             double price = car.Price();
-            Assert.AreEqual(250, price);
+            Assert.AreEqual(230, price);
         }
     }
     

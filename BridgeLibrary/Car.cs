@@ -17,10 +17,10 @@
         /// <summary>
         /// overrider Price metoden fra Vehicle klassen
         /// </summary>
-        /// <returns>Den returnere 250 Kr</returns>
+        /// <returns>Den returnere 230 Kr</returns>
         public override double Price()
         {
-            double basePrice = 250;
+            double basePrice = 230;
             if (Brobizz)
                 return basePrice * 0.9;
             return basePrice;

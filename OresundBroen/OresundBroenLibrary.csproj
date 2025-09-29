@@ -10,10 +10,4 @@
     <ProjectReference Include="..\BridgeLibrary\BridgeLibrary.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="BridgeLibrary">
-      <HintPath>EksternDll\BridgeLibrary.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
